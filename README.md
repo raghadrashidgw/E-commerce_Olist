@@ -78,7 +78,3 @@ Based on the segmentation, a recommended tailored marketing strategies:
 ## 🗂️ Data Source
 
 📥 Dataset: [Brazilian E-Commerce Public Dataset by Olist (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-
----
-
-Let me know if you’d like a version with badges, collapsible sections, or even a Jupyter Notebook preview!
