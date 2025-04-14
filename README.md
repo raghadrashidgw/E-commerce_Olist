@@ -4,6 +4,7 @@
 The analysis conducted on Brazilian ecommerce public dataset (Olist Store), with information of 100k orders from 2016 to 2018.
 
 ## 1. Demographics:
+![](Plots/Demographics1.png) 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## 2. Customer Behaviour
 ## Approche: The Recency, Frequency, Monetary (RFM) model 
@@ -16,6 +17,7 @@ The analysis conducted on Brazilian ecommerce public dataset (Olist Store), with
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 2.1 K-means algorithim 
 ![](Plots/SilhouetteMethod.png)
+
 The "elbow" (optimal point) is where the curve bends—here, it occurs around 4-6 cluster. The Optimal points as SilhouetteMethod showed is 6 clusters. 4 clusters were chosen for simpler segmentation standared, given by:
 | Cluster | Recency | Frequency | Monetary | **Tier**               |
 |---------|---------|-----------|----------|-------------------------|
