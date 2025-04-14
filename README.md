@@ -22,10 +22,10 @@ Using the **Recency, Frequency, and Monetary (RFM)** model to classify customers
 
 | **Tier**             | **Behavior Summary**                                                                 |
 |----------------------|----------------------------------------------------------------------------------------|
-| 🆕 **New Customers**       | Recently active customers with low engagement or spending.                        |
-| 🌱 **Potential Loyalists** | Customers who show signs of loyalty — recent activity with decent frequency/value. |
-| 💎 **Loyal Customers**     | High-value, frequent buyers with strong lifetime value.                            |
-| ⚠️ **Churn Risks**         | Inactive or infrequent customers with low monetary value.                          |
+| **New Customers**       | Recently active customers with low engagement or spending.                        |
+| **Potential Loyalists** | Customers who show signs of loyalty — recent activity with decent frequency/value. |
+| **Loyal Customers**     | High-value, frequent buyers with strong lifetime value.                            |
+| **Churn Risks**         | Inactive or infrequent customers with low monetary value.                          |
 
 ---
 
@@ -40,10 +40,10 @@ Although 6 clusters showed the highest silhouette score, we opted for 4 clusters
 
 | **Cluster** | **Recency** | **Frequency** | **Monetary** | **Assigned Tier**        |
 |-------------|-------------|---------------|--------------|---------------------------|
-| 0           | 222.0       | 3.0           | 601.77       | 🌱 Potential Loyalists     |
-| 1           | 135.0       | 1.0           | 109.50       | 🆕 New Customers           |
-| 2           | 227.5       | 10.0          | 8,716.88     | 💎 Loyal Customers         |
-| 3           | 382.0       | 1.0           | 106.97       | ⚠️ Churn Risks             |
+| 0           | 222.0       | 3.0           | 601.77       | Potential Loyalists     |
+| 1           | 135.0       | 1.0           | 109.50       | New Customers           |
+| 2           | 227.5       | 10.0          | 8,716.88     | Loyal Customers         |
+| 3           | 382.0       | 1.0           | 106.97       | Churn Risks             |
 
 ---
 
@@ -64,14 +64,14 @@ Visual representation of customer clusters and key behavior differences:
 
 ## 💡 4. Strategic Recommendations
 
-Based on the segmentation, here are tailored marketing strategies:
+Based on the segmentation, a recommended tailored marketing strategies:
 
 | **Customer Tier**      | **Recommended Actions**                                                                 |
 |------------------------|------------------------------------------------------------------------------------------|
-| 🆕 New Customers        | Welcome emails, second-purchase discounts, retargeting via ads                          |
-| 🌱 Potential Loyalists  | Personalized deals, urgency tactics (limited-time offers), loyalty program invitation   |
-| 💎 Loyal Customers      | Exclusive offers, VIP rewards, gather feedback to increase retention                    |
-| ⚠️ Churn Risks          | Reactivation campaigns, special comeback deals via email or SMS                         |
+| New Customers        | Welcome emails, second-purchase discounts, retargeting via ads                          |
+| Potential Loyalists  | Personalized deals, urgency tactics (limited-time offers), loyalty program invitation   |
+| Loyal Customers      | Exclusive offers, VIP rewards, gather feedback to increase retention                    |
+| Churn Risks          | Reactivation campaigns, special comeback deals via email or SMS                         |
 
 ---
 
