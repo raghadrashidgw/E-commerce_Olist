@@ -4,9 +4,8 @@
 The analysis conducted on Brazilian ecommerce public dataset (Olist Store), with information of 100k orders from 2016 to 2018.
 
 ## 1. Demographics:
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## 2. Customer Behaviour
-
 ## Approche: The Recency, Frequency, Monetary (RFM) model 
 | **Tier**          | **Behavior Summary**                          |
 |-------------------|-----------------------------------------------|
@@ -29,6 +28,9 @@ The "elbow" (optimal point) is where the curve bends—here, it occurs around 4-
 ![](Plots/CustomerSegmentation.png)
 ## Customers beaviour based on their Segment:
 ![](Plots/CustomerSatisfaction.png)
+![](Plots/PricePreference.png)
+![](Plots/PreferredProduct.png)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Recommendation:
 | **Tier**          | **Recommended Strategy**                     |
 |-------------------|--------------------------------------------|
