@@ -1,44 +1,84 @@
-# E-commerce_Olist
-![](https://kondado.io/assets/images/source-olist-tiny.gif)
+# 🛒 E-commerce Customer Segmentation - Olist Dataset
 
-The analysis conducted on Brazilian ecommerce public dataset (Olist Store), with information of 100k orders from 2016 to 2018.
+![Olist Logo](https://kondado.io/assets/images/source-olist-tiny.gif)
 
-## 1. Demographics:
-![](Plots/Demographics1.png) 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## 2. Customer Behaviour
-## Approche: The Recency, Frequency, Monetary (RFM) model 
-| **Tier**          | **Behavior Summary**                          |
-|-------------------|-----------------------------------------------|
-| **New Customers** | Customers with low engagement who have transacted recently        |
-| **Potential Loyal** | Customers showing loyalty signals (Recent customers but with a good amount of spending/frequency) | 
-| **Loyal Customers** | Frequent buyers with high lifetime value (had the highest total transactions/monetary value)| 
-| **Churn Risks**   | Inactive customers who may not return   (Have made a transaction while ago with low frequency/monetary purchases)|
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### 2.1 K-means algorithim 
-![](Plots/SilhouetteMethod.png)
+This project analyzes the Brazilian e-commerce public dataset from [Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), containing data on over **100,000 orders between 2016 and 2018**. The goal is to understand customer behavior and suggest data-driven marketing strategies.
 
-The "elbow" (optimal point) is where the curve bends—here, it occurs around 4-6 cluster. The Optimal points as SilhouetteMethod showed is 6 clusters. 4 clusters were chosen for simpler segmentation standared, given by:
-| Cluster | Recency | Frequency | Monetary | **Tier**               |
-|---------|---------|-----------|----------|-------------------------|
-| 0       | 222.0   | 3.0       | 601.765  | **Potential Loyal**     |
-| 1       | 135.0   | 1.0       | 109.500  | **New Customers**       |
-| 2       | 227.5   | 10.0      | 8,716.88 | **Loyal Customers** |
-| 3       | 382.0   | 1.0       | 106.970  | **Churn Risks**             |
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Customer Segmentation 
-![](Plots/CustomerSegmentation.png)
-## Customers beaviour based on their Segment:
-![](Plots/CustomerSatisfaction.png)
-![](Plots/PricePreference.png)
-![](Plots/PreferredProduct.png)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Recommendation:
-| **Tier**          | **Recommended Strategy**                     |
-|-------------------|--------------------------------------------|
-| **New Customers** | Welcome offers, second-purchase incentives, Retargeting (By ads) |
-| **Potential Loyal** | Loyalty program enrollment, targeted deals,Urgency Tactics |
-| **Loyal Customers** | VIP treatment, exclusive rewards, Asking for feedback  |
-| **Churn Risks**   | Campaign via email, reactivation offers  |
-## Data source
-https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce 
+---
+
+## 📊 1. Demographics
+
+An overview of customer locations, order volumes by state, and other demographic insights.
+
+![Demographics](Plots/Demographics1.png)
+
+---
+
+## 🔍 2. Customer Behavior Analysis
+
+### Approach: **RFM Segmentation Model**
+
+Using the **Recency, Frequency, and Monetary (RFM)** model to classify customers based on their interaction with the platform.
+
+| **Tier**             | **Behavior Summary**                                                                 |
+|----------------------|----------------------------------------------------------------------------------------|
+| 🆕 **New Customers**       | Recently active customers with low engagement or spending.                        |
+| 🌱 **Potential Loyalists** | Customers who show signs of loyalty — recent activity with decent frequency/value. |
+| 💎 **Loyal Customers**     | High-value, frequent buyers with strong lifetime value.                            |
+| ⚠️ **Churn Risks**         | Inactive or infrequent customers with low monetary value.                          |
+
+---
+
+### 2.1 🧠 Clustering with K-Means
+
+To refine segmentation, we applied the K-Means clustering algorithm on the RFM features.
+
+**Optimal Clusters (Silhouette Method):**  
+Although 6 clusters showed the highest silhouette score, we opted for 4 clusters to simplify analysis.
+
+![Silhouette Method](Plots/SilhouetteMethod.png)
+
+| **Cluster** | **Recency** | **Frequency** | **Monetary** | **Assigned Tier**        |
+|-------------|-------------|---------------|--------------|---------------------------|
+| 0           | 222.0       | 3.0           | 601.77       | 🌱 Potential Loyalists     |
+| 1           | 135.0       | 1.0           | 109.50       | 🆕 New Customers           |
+| 2           | 227.5       | 10.0          | 8,716.88     | 💎 Loyal Customers         |
+| 3           | 382.0       | 1.0           | 106.97       | ⚠️ Churn Risks             |
+
+---
+
+## 🎯 3. Customer Segmentation
+
+Visual representation of customer clusters and key behavior differences:
+
+- **Satisfaction Levels**
+- **Price Sensitivity**
+- **Product Preferences**
+
+![Customer Segmentation](Plots/CustomerSegmentation.png)
+![Satisfaction](Plots/CustomerSatisfaction.png)
+![Price Preference](Plots/PricePreference.png)
+![Product Preference](Plots/PreferredProduct.png)
+
+---
+
+## 💡 4. Strategic Recommendations
+
+Based on the segmentation, here are tailored marketing strategies:
+
+| **Customer Tier**      | **Recommended Actions**                                                                 |
+|------------------------|------------------------------------------------------------------------------------------|
+| 🆕 New Customers        | Welcome emails, second-purchase discounts, retargeting via ads                          |
+| 🌱 Potential Loyalists  | Personalized deals, urgency tactics (limited-time offers), loyalty program invitation   |
+| 💎 Loyal Customers      | Exclusive offers, VIP rewards, gather feedback to increase retention                    |
+| ⚠️ Churn Risks          | Reactivation campaigns, special comeback deals via email or SMS                         |
+
+---
+
+## 🗂️ Data Source
+
+📥 Dataset: [Brazilian E-Commerce Public Dataset by Olist (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+
+---
+
+Let me know if you’d like a version with badges, collapsible sections, or even a Jupyter Notebook preview!
