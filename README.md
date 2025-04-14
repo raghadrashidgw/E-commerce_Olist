@@ -26,9 +26,9 @@ The "elbow" (optimal point) is where the curve bends—here, it occurs around 4-
 | 3       | 382.0   | 1.0       | 106.970  | **Churn Risks**             |
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Customer Segmentation 
-![](Plots/Customer Segmentation.png)
+![](Plots/CustomerSegmentation.png)
 ## Customers beaviour based on their Segment:
-
+![](Plots/CustomerSatisfaction.png)
 ## Recommendation:
 | **Tier**          | **Recommended Strategy**                     |
 |-------------------|--------------------------------------------|
