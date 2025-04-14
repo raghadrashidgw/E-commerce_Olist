@@ -57,9 +57,6 @@ Visual representation of customer clusters and key behavior differences:
 
 ![Customer Segmentation](Plots/CustomerSegmentation.png)
 ![Satisfaction](Plots/CustomerSatisfaction.png)
-![Price Preference](Plots/PricePreference.png)
-![Product Preference](Plots/PreferredProduct.png)
-
 ---
 
 ## 💡 4. Strategic Recommendations
