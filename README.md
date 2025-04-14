@@ -7,9 +7,7 @@ This project analyzes the Brazilian e-commerce public dataset from [Olist](https
 ---
 
 ## 📊 1. Demographics
-
-An overview of customer locations, order volumes by state, and other demographic insights.
-
+São Paulo is the state with the dominated orders, 42% of the customer are from São Paulo state!
 ![Demographics](Plots/Demographics1.png)
 
 ---
